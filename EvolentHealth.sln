@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6BE19301-0F79-441E-A5A6-025E7C960EE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{FF968CDB-F2F6-49AE-AC4A-5A34952AE9AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{B77742BF-41D1-4FDE-AF46-204609F5AF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.Entities", "EvolentHealth.Entities\EvolentHealth.Entities.csproj", "{126D3AB3-A4A5-457F-ABD1-A5291F6CA0E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.Repository", "EvolentHealth.Repository\EvolentHealth.Repository.csproj", "{B5682773-5A7F-4DA9-A4FB-50C298FB89D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.Service", "EvolentHealth.Service\EvolentHealth.Service.csproj", "{BB25F1B2-0180-4D1E-85DB-96127ACE50EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.ServiceInterface", "EvolentHealth.ServiceInterface\EvolentHealth.ServiceInterface.csproj", "{5536C805-CEEE-46DE-A620-E93F22C85E16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.UnitTest.API.Test", "EvolentHealth.UnitTest.API.Test\EvolentHealth.UnitTest.API.Test.csproj", "{3C2C9C4C-41F8-40DA-9C01-07309E2E8BAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.Models", "EvolentHealth.Models\EvolentHealth.Models.csproj", "{9E3FB945-E97F-4A85-BD61-1903BEEA9844}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{2F95872D-BD94-4406-9354-2835AEDFEC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.CrossCutting.DependencyResolution", "EvolentHealth.CrossCutting.DependencyResolution\EvolentHealth.CrossCutting.DependencyResolution.csproj", "{C422B3EB-46E7-4625-BE64-CCAC8BC2563F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.CrossCutting.Logging", "EvolentHealth.CrossCutting.Logging\EvolentHealth.CrossCutting.Logging.csproj", "{906C954A-18D9-48B4-B859-DBE02260BDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.API", "EvolentHealth.API\EvolentHealth.API.csproj", "{4A78B6B1-AFD2-4898-B9D4-77CB60319A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.Utilities", "EvolentHealth.Utilities\EvolentHealth.Utilities.csproj", "{46B20879-9694-47FA-8264-8195A1EFE47F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF32939E-D7A1-467E-8C2C-743BD02F9DC6}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{126D3AB3-A4A5-457F-ABD1-A5291F6CA0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126D3AB3-A4A5-457F-ABD1-A5291F6CA0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126D3AB3-A4A5-457F-ABD1-A5291F6CA0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126D3AB3-A4A5-457F-ABD1-A5291F6CA0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5682773-5A7F-4DA9-A4FB-50C298FB89D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5682773-5A7F-4DA9-A4FB-50C298FB89D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5682773-5A7F-4DA9-A4FB-50C298FB89D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5682773-5A7F-4DA9-A4FB-50C298FB89D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB25F1B2-0180-4D1E-85DB-96127ACE50EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB25F1B2-0180-4D1E-85DB-96127ACE50EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB25F1B2-0180-4D1E-85DB-96127ACE50EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB25F1B2-0180-4D1E-85DB-96127ACE50EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5536C805-CEEE-46DE-A620-E93F22C85E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5536C805-CEEE-46DE-A620-E93F22C85E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5536C805-CEEE-46DE-A620-E93F22C85E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5536C805-CEEE-46DE-A620-E93F22C85E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2C9C4C-41F8-40DA-9C01-07309E2E8BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2C9C4C-41F8-40DA-9C01-07309E2E8BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2C9C4C-41F8-40DA-9C01-07309E2E8BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2C9C4C-41F8-40DA-9C01-07309E2E8BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3FB945-E97F-4A85-BD61-1903BEEA9844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3FB945-E97F-4A85-BD61-1903BEEA9844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3FB945-E97F-4A85-BD61-1903BEEA9844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3FB945-E97F-4A85-BD61-1903BEEA9844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C422B3EB-46E7-4625-BE64-CCAC8BC2563F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C422B3EB-46E7-4625-BE64-CCAC8BC2563F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C422B3EB-46E7-4625-BE64-CCAC8BC2563F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C422B3EB-46E7-4625-BE64-CCAC8BC2563F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906C954A-18D9-48B4-B859-DBE02260BDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906C954A-18D9-48B4-B859-DBE02260BDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906C954A-18D9-48B4-B859-DBE02260BDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906C954A-18D9-48B4-B859-DBE02260BDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A78B6B1-AFD2-4898-B9D4-77CB60319A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A78B6B1-AFD2-4898-B9D4-77CB60319A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A78B6B1-AFD2-4898-B9D4-77CB60319A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A78B6B1-AFD2-4898-B9D4-77CB60319A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B20879-9694-47FA-8264-8195A1EFE47F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B20879-9694-47FA-8264-8195A1EFE47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B20879-9694-47FA-8264-8195A1EFE47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B20879-9694-47FA-8264-8195A1EFE47F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{126D3AB3-A4A5-457F-ABD1-A5291F6CA0E4} = {6BE19301-0F79-441E-A5A6-025E7C960EE9}
+		{B5682773-5A7F-4DA9-A4FB-50C298FB89D0} = {6BE19301-0F79-441E-A5A6-025E7C960EE9}
+		{BB25F1B2-0180-4D1E-85DB-96127ACE50EE} = {FF968CDB-F2F6-49AE-AC4A-5A34952AE9AC}
+		{5536C805-CEEE-46DE-A620-E93F22C85E16} = {FF968CDB-F2F6-49AE-AC4A-5A34952AE9AC}
+		{3C2C9C4C-41F8-40DA-9C01-07309E2E8BAB} = {B77742BF-41D1-4FDE-AF46-204609F5AF58}
+		{9E3FB945-E97F-4A85-BD61-1903BEEA9844} = {FF968CDB-F2F6-49AE-AC4A-5A34952AE9AC}
+		{C422B3EB-46E7-4625-BE64-CCAC8BC2563F} = {2F95872D-BD94-4406-9354-2835AEDFEC9D}
+		{906C954A-18D9-48B4-B859-DBE02260BDB6} = {2F95872D-BD94-4406-9354-2835AEDFEC9D}
+		{46B20879-9694-47FA-8264-8195A1EFE47F} = {2F95872D-BD94-4406-9354-2835AEDFEC9D}
+	EndGlobalSection
+EndGlobal
