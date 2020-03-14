@@ -9,6 +9,8 @@ using EvolentHealth.Repository.RepositoryInterface;
 using EvolentHealth.ServiceInterface;
 using EvolentHealth.Service;
 using EvolentHealth.Repository.Context;
+using EvolentHealth.CrossCutting.Logging.LogInterface;
+using EvolentHealth.CrossCutting.Logging.LogService;
 
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(EvolentHealth.CrossCutting.DependencyResolution.App_Start.NinjectWebCommon), "Start")]
@@ -67,10 +69,9 @@ namespace EvolentHealth.CrossCutting.DependencyResolution.App_Start
 		private static void RegisterServices(IKernel kernel)
 		{
 			kernel.Bind<EvolentHealthContext>().To<EvolentHealthContext>();
+			kernel.Bind<ILogger>().To<Logger>();
 			kernel.Bind<IContactRepository>().To<ContactRepository>();
 			kernel.Bind<IContactService>().To<ContactService>();
-
-			ServiceLocator.SetServiceLocator(() => new NinjectServiceLocator(kernel));
 
 		}
 	}

@@ -29,13 +29,15 @@ namespace EvolentHealth.Service
 		}
 
 		/// <summary>
-		/// 
+		/// get list of contact details
 		/// </summary>
 		/// <param name="ct"></param>
 		/// <returns></returns>
 		public async Task<IEnumerable<ContactModel>> GetContacts(CancellationToken ct = default(CancellationToken))
 		{
 			var contacts = await _contactRepository.GetAllAsync(ct);
+
+			if (contacts == null) return new List<ContactModel>();
 
 			return contacts.Select(x => new ContactModel
 			{
@@ -48,14 +50,14 @@ namespace EvolentHealth.Service
 		}
 
 		/// <summary>
-		/// 
+		/// get contact details by their id
 		/// </summary>
 		/// <param name="id"></param>
 		/// <param name="ct"></param>
 		/// <returns></returns>
 		public async Task<ContactModel> GetContact(int id, CancellationToken ct = default(CancellationToken))
 		{
-			var contact = await _contactRepository.GetByContactIdAsync(id, ct);
+			var contact = await _contactRepository.GetByIdAsync(id, ct);
 
 			if (contact == null) return null;
 
@@ -70,7 +72,7 @@ namespace EvolentHealth.Service
 		}
 
 		/// <summary>
-		/// 
+		/// add contact deatils 
 		/// </summary>
 		/// <param name="newContact"></param>
 		/// <param name="ct"></param>
@@ -92,14 +94,14 @@ namespace EvolentHealth.Service
 		}
 
 		/// <summary>
-		/// 
+		///  update contact details
 		/// </summary>
 		/// <param name="contactModel"></param>
 		/// <param name="ct"></param>
 		/// <returns></returns>
 		public async Task<bool> UpdateContact(ContactModel contactModel, CancellationToken ct = default(CancellationToken))
 		{
-			 var contact = await _contactRepository.GetByContactIdAsync(contactModel.ContactId, ct);
+			 var contact = await _contactRepository.GetByIdAsync(contactModel.ContactId, ct);  
 
             if (contact == null) return false;
 
@@ -113,14 +115,14 @@ namespace EvolentHealth.Service
 		}
 
 		/// <summary>
-		/// 
+		/// delete contact details by their id
 		/// </summary>
 		/// <param name="id"></param>
 		/// <param name="ct"></param>
 		/// <returns></returns>
 		public async Task<bool> DeleteContact(int id, CancellationToken ct = default(CancellationToken))
 		{
-			var contact = await _contactRepository.GetByContactIdAsync(id, ct);
+			var contact = await _contactRepository.GetByIdAsync(id, ct);
 
 			if (contact == null) return false;
 
